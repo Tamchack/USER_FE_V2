@@ -86,22 +86,22 @@ const Main: FC = () => {
     }, 500);
   }
 
-  setInterval(() => {
-    if (processing) return;
-    processing = true;
-    const list = document.getElementById('seller-list')?.children;
-    if(!list) return;
+  // setInterval(() => {
+  //   if (processing) return;
+  //   processing = true;
+  //   const list = document.getElementById('seller-list')?.children;
+  //   if(!list) return;
 
-    NumberString.unshift(NumberString[NumberString.length - 1]);
-    NumberString.pop();
+  //   NumberString.unshift(NumberString[NumberString.length - 1]);
+  //   NumberString.pop();
     
-    for(let i = 0;i < list.length;i++){
-      list[i].id = NumberString[i];
-    }
-    setTimeout(() => {
-      processing = false;
-    }, 500);
-  }, 5000);
+  //   for(let i = 0;i < list.length;i++){
+  //     list[i].id = NumberString[i];
+  //   }
+  //   setTimeout(() => {
+  //     processing = false;
+  //   }, 500);
+  // }, 5000);
 
   const getBestSellerList = () => {
     return bestSellers.map((element, index) => {
@@ -128,14 +128,14 @@ const Main: FC = () => {
         <S.MainMapBox>
           <S.MainMapRegionBox>
             <S.MainMapRegionHeader>
-              <div>
+              <S.MainMapTitleBox>
                 <S.MainMapRegionTitleText>우리 동네 서점 찾기</S.MainMapRegionTitleText>
                 <S.MainMapRegionTitleUnderbar></S.MainMapRegionTitleUnderbar>
-              </div>
-              <div onMouseEnter={() => setHoverIcon(true)} onMouseLeave={() => setHoverIcon(false)}>
-              <S.MainMapRegionIcon src={MapIcon}></S.MainMapRegionIcon>
-              <S.MainMapRegionPointIcon src={MapPointIcon} hover={hoverIcon}></S.MainMapRegionPointIcon>
-              </div>
+              </S.MainMapTitleBox>
+              <S.MainMapRegionIconBox onMouseEnter={() => setHoverIcon(true)} onMouseLeave={() => setHoverIcon(false)}>
+                <S.MainMapRegionIcon src={MapIcon}></S.MainMapRegionIcon>
+                <S.MainMapRegionPointIcon src={MapPointIcon} hover={hoverIcon}></S.MainMapRegionPointIcon>
+              </S.MainMapRegionIconBox>
             </S.MainMapRegionHeader>
             <S.MainMapRegionContent>{getRegionList()}</S.MainMapRegionContent>
           </S.MainMapRegionBox>
