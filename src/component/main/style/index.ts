@@ -4,7 +4,7 @@ export const MainBody = styled.div`
   width: 80%;
   display: block;
   margin: 0 auto;
-  margin-top: 70px;
+  margin-top: 5%;
 `;
 
 export const MainHeader = styled.div `
@@ -12,22 +12,21 @@ export const MainHeader = styled.div `
 `;
 
 export const MainTitle = styled.span `
-  font-size: 25px;
+  font-size: 1.5em;
   font-weight: bold;
-  padding-left: 5px;
+  padding-left: 0.5%;
 `;
 
 export const MainTitleUnderbar = styled.div `
-  width: 160px;
-  height: 7px;
+  width: 10em;
+  height: 10px;
   border-radius: 10px;
   background-color: #7B91FF;
 `;
 
 export const MainContent = styled.div `
   width: 85%;
-  margin: 80px auto;
-  margin-bottom: 40px;
+  margin: 4% auto;
 `;
 
 export const MainMapSearchBox = styled.div `
@@ -55,40 +54,52 @@ export const MainMapSearchIcon = styled.img `
 export const MainMapBox = styled.div `
   display: flex;
   height: 50vh;
-  margin-top: 25px;
+  margin-top: 2%;
   box-shadow: 3px 3px 10px 0px #00000042;
 `;
 
 export const MainMapRegionBox = styled.div `
-  width: 45%;
-  padding: 50px 50px 50px 100px;
+  width: 55%;
+  padding: 5% 3% 3% 5%;
 `;
 
 export const MainMapRegionHeader = styled.div `
   display: flex;
-  height: 50px;
+  height: 15%;
+  align-items: flex-end;
 `;
 
-export const MainMapRegionTitleText = styled.span `
-  font-size: 40px;
+export const MainMapTitleBox = styled.div `
+  position: relative;
+`;
+
+export const MainMapRegionTitleText = styled.div `
+  font-size: 2em;
   font-weight: bold;
   letter-spacing: 6px;
-  padding-left: 13px;
+  text-align: center;
+  margin: 0 15px;
 `;
 
 export const MainMapRegionTitleUnderbar = styled.div `
-  width: 410px;
   height: 7px;
   border-radius: 10px;
   background-color: #7B91FF;
-  margin-top: 0px;
+`;
+
+export const MainMapRegionIconBox = styled.div `
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 15%;
+  height: 110%;
+  margin-left: 3%;
 `;
 
 export const MainMapRegionIcon = styled.img `
-  position: relative;
-  height: 30px;
-  margin-left: 20px;
-  top: 50%;
+  position: absolute;
+  height: 60%;
+  top: 40%;
 `;
 
 const MapPointIconAnimation = keyframes `
@@ -96,7 +107,7 @@ const MapPointIconAnimation = keyframes `
     top: 15%;
   }
   50% {
-    top: -10%;
+    top: -25%;
   }
   100% {
     top: 15%;
@@ -104,31 +115,29 @@ const MapPointIconAnimation = keyframes `
 `;
 
 export const MainMapRegionPointIcon = styled.img<{hover: boolean}> `
-  position: relative;
-  height: 35px;
-  margin-left: -43px;
+  position: absolute;
+  height: 60%;
   top: 15%;
   animation: ${MapPointIconAnimation} ${({hover}) => hover ? "0.2s cubic-bezier(0.1, 0.61, 0.58, 1)" : "nonde"};
 `;
 
 export const MainMapRegionContent = styled.div `
-  margin-top: 50px;
+  margin-top: 5%;
+  height: 70%;
 `;
 
-export const MainMapRegionElement = styled.div `
-  height: 12px;
+export const MainMapRegionElement = styled.button `
   font-size: 17px;
-  line-height: 12px;
-  max-width: 24%;
+  /* max-width: 24%; */
   float: left;
-  padding: 10px;
+  padding: 0.5% 1.5%;
   margin: 10px 10px;
-  text-align: center;
   background-color: #7B91FF;
   border: 2px solid #49498A;
   border-radius: 20px;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   cursor: pointer;
+  outline: none;
 `;
 
 export const MainMap = styled.div `
@@ -146,29 +155,29 @@ export const MainMapImage = styled.img `
 export const MainPageMoveArrowBox = styled.div `
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 3%;
 `;
 
 export const MainPageMoveArrow = styled.img `
-  width: 150px;
+  width: 10%;
   margin: auto;
   cursor: pointer;
 `;
 
 export const BestSellerBox = styled.div `
-  height: 600px;
-  margin-top: 150px;
-  margin-bottom: 150px;
+  height: 65vh;
+  margin-top: 12.5%;
+  margin-bottom: 12.5%;
 `;
 
 export const BestSellerTitle = styled.div `
-  font-size: 25px;
+  font-size: 1.5em;
   font-weight: bold;
   padding-left: 5px;
 `;
 
 export const BestSellerTitleUnderBar = styled.div `
-  width: 135px;
+  width: 8em;
   height: 7px;
   background-color: #7b91ff;
   border-radius: 10px;
@@ -178,7 +187,7 @@ export const BestSellerList = styled.div `
   position: relative;
   display: flex;
   width: 80%;
-  height: 500px;
+  height: 85%;
   margin: 30px auto 0px auto;
   perspective: 30cm;
 `;
@@ -188,8 +197,8 @@ export const BestSellerElement = styled.div `
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
-  width: 350px;
-  height: 500px;
+  width: 35%;
+  height: 95%;
   background-color: white;
   border-radius: 5px;
   box-shadow: 0px 3px 10px 0px #00000042;
@@ -223,7 +232,7 @@ export const BestSellerElement = styled.div `
 `;
 
 export const BestSellerImage = styled.img `
-  width: 290px;
+  width: 80%;
   margin-top: 10px;
 `;
 
