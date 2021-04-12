@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70.453" height="30.1" viewBox="0 0 70.453 30.1">
+  <defs>
+    <filter id="탐책" x="0" y="0" width="44.1" height="30.1" filterUnits="userSpaceOnUse">
+      <feOffset dx="0.5" dy="0.5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.25" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="패스_1" x="41.415" y="8.809" width="23.055" height="19.849" filterUnits="userSpaceOnUse">
+      <feOffset dx="0.5" dy="0.5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.25" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="타원_17" x="55.3" y="12.3" width="13.5" height="13.5" filterUnits="userSpaceOnUse">
+      <feOffset dx="0.5" dy="0.5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.25" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="패스_2" x="63.837" y="21.328" width="6.616" height="6.991" filterUnits="userSpaceOnUse">
+      <feOffset dx="0.5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.25" result="blur-4"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="그룹_117" data-name="그룹 117" transform="translate(0.55 6.541)">
+    <g transform="matrix(1, 0, 0, 1, -0.55, -6.54)" filter="url(#탐책)">
+      <text id="탐책-2" data-name="탐책" transform="translate(0.55 23.55)" stroke="#000" stroke-width="0.3" font-size="21" font-family="MalgunGothic, Malgun Gothic"><tspan x="0" y="0">탐책</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -0.55, -6.54)" filter="url(#패스_1)">
+      <path id="패스_1-2" data-name="패스 1" d="M90.649-63.394s-.413,15.66,0,15.9,2.739-1.616,5.182-1.91,4.593,1.91,4.593,1.91,2.373-2.2,4.983-1.91,5.019,2.225,5.455,1.91,0-15.9,0-15.9a10.154,10.154,0,0,0-5.455-1.177,12.8,12.8,0,0,0-4.983,2.159A8.044,8.044,0,0,0,96.3-64.571C93.856-64.959,90.649-63.394,90.649-63.394Z" transform="translate(-48.32 74.21)" fill="#fff" stroke="#212171" stroke-width="1"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -0.55, -6.54)" filter="url(#타원_17)">
+      <g id="타원_17-2" data-name="타원 17" transform="translate(55.55 12.55)" fill="none" stroke="#131313" stroke-width="1.2">
+        <circle cx="6" cy="6" r="6" stroke="none"/>
+        <circle cx="6" cy="6" r="5.4" fill="none"/>
+      </g>
+    </g>
+    <circle id="타원_18" data-name="타원 18" cx="5" cy="5" r="5" transform="translate(56 7.009)" fill="#fff" opacity="0.6"/>
+    <g transform="matrix(1, 0, 0, 1, -0.55, -6.54)" filter="url(#패스_2)">
+      <path id="패스_2-2" data-name="패스 2" d="M106.211-48.128l3.281,3.656" transform="translate(-41.21 71.12)" fill="none" stroke="#131313" stroke-linecap="round" stroke-width="1.3"/>
+    </g>
+    <path id="패스_3" data-name="패스 3" d="M97.75-59.6v12.138" transform="translate(-46.212 66.206)" fill="none" stroke="#ececec" stroke-linecap="round" stroke-width="0.5"/>
+  </g>
+</svg>
