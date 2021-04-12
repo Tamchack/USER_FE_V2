@@ -6,8 +6,8 @@ import GlobalStyle from './styles/globalStyle';
 
 render(
     <>
-    <GlobalStyle/>
-    <Router />
+        <GlobalStyle/>
+        <Router />
     </>,
     document.getElementById('root')
 );

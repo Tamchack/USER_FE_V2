@@ -22,6 +22,7 @@ export const AdminLogo = styled.div`
 
 export const AdminBox = styled.div`
     width: 100%;
+    height: 100vh;
 `;
 
 export const AdminHeaderButton = styled.button`
@@ -33,13 +34,13 @@ export const AdminHeaderButtonWrapper = styled.div``;
 
 export const AdminFooter = styled.div`
     width: 100%;
-    height: 52px;
+    height: 132px;
     background-color: #212171;
     float: bottom;
 `;
 
 export const AdminBody = styled.div`
-    min-height: calc(100vh - 104px);
+    min-height: calc(100vh - 52px);
     padding: 176px 180px 0px 180px;
     box-sizing: border-box;
     display: flex;
@@ -56,5 +57,4 @@ export const AdminCharacter = styled.div`
     margin-top: 65px;
     margin-left: 36px;
     background-image: url(${adminCharactor});
-    background-repeat: no-repeat;
 `;
