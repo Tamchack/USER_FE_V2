@@ -1,9 +1,22 @@
-import { FC } from 'react';
+import { FC, useEffect } from 'react';
 import * as S from './style';
-import SignupUser from '../../image/signup_user.svg';
-import SignupStoreUser from '../../image/signup_storeuser.svg';
+import { useParams } from 'react-router';
+import SignupSelectBox from './select';
+
+interface Param {
+  type: string;
+}
 
 const Signup: FC = () => {
+  let { type } = useParams<Param>();
+
+  const getContent = () => {
+    if (type) {
+    } else {
+      return <SignupSelectBox />;
+    }
+  };
+
   return (
     <S.SignupPage>
       <S.SignupContent>
@@ -11,16 +24,7 @@ const Signup: FC = () => {
           <S.SingupContentTitle>회원가입</S.SingupContentTitle>
           <S.SignupContentTitleUnderbar />
         </S.SignupContentHeader>
-        <S.SignupContentBox>
-          <S.SignupUserType>
-            <S.SignupUserTypeImage src={SignupUser} />
-            고객
-          </S.SignupUserType>
-          <S.SignupUserType>
-            <S.SignupUserTypeImage src={SignupStoreUser} />
-            서점 관계자
-          </S.SignupUserType>
-        </S.SignupContentBox>
+        {getContent()}
       </S.SignupContent>
     </S.SignupPage>
   );
