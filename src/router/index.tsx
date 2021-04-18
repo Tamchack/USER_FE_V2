@@ -22,7 +22,8 @@ const Router = () => {
           <Header />
           <Route exact path="/" component={Main} />
           <Route path="/login" component={Login} />
-          <Route path="/signup" component={Signup} />
+          <Route exact path="/signup" component={Signup} />
+          <Route path="/signup/:type" component={Signup} />
           <Footer />
         </Route>
       </Switch>
