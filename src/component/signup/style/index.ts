@@ -84,7 +84,7 @@ export const SignupInput = styled.input`
   outline: none;
 `;
 
-export const SignupInputtUnderText = styled.div`
+export const SignupInputUnderText = styled.div`
   height: 20px;
   font-size: 0.75em;
   padding-left: 2px;

@@ -71,9 +71,9 @@ const Login: FC = () => {
             inputId(e.currentTarget.value);
           }}
         />
-        <S.LoginInputtUnderText id="idUnderText">
+        <S.LoginInputUnderText id="idUnderText">
           아이디 형식이 올바르지 않습니다
-        </S.LoginInputtUnderText>
+        </S.LoginInputUnderText>
         <S.LoginInput
           id="password"
           type="password"
@@ -82,9 +82,9 @@ const Login: FC = () => {
             inputPassword(e.currentTarget.value);
           }}
         />
-        <S.LoginInputtUnderText id="passwordUnderText">
+        <S.LoginInputUnderText id="passwordUnderText">
           비밀번호 형식이 올바르지 않습니다
-        </S.LoginInputtUnderText>
+        </S.LoginInputUnderText>
         <S.LoginButton check={checkId && checkPassword} onClick={login}>
           로그인
         </S.LoginButton>

@@ -41,7 +41,7 @@ export const LoginInput = styled.input`
   outline: none;
 `;
 
-export const LoginInputtUnderText = styled.div`
+export const LoginInputUnderText = styled.div`
   height: 20px;
   font-size: 0.75em;
   padding-left: 2px;
