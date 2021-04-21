@@ -3,6 +3,7 @@ import * as S from './style';
 import { useHistory, useParams } from 'react-router';
 import SignupSelectBox from './select';
 import SignupOwner from './owner';
+import SignupCustomer from './customer';
 
 interface Param {
   type: string;
@@ -15,6 +16,7 @@ const Signup: FC = () => {
   const getContent = () => {
     if (type) {
       if (type === 'owner') return <SignupOwner />;
+      else if (type === 'customer') return <SignupCustomer />;
       else history.push('/signup');
     } else {
       return <SignupSelectBox />;
